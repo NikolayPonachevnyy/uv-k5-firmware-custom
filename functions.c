@@ -196,7 +196,7 @@ void FUNCTION_Transmit()
 	if (gAlarmState != ALARM_STATE_OFF) {
 		#ifdef ENABLE_TX1750
 		if (gAlarmState == ALARM_STATE_TX1750)
-			BK4819_TransmitTone(true, 1750);
+			BK4819_TransmitTone(true, 1000);
 		#endif
 
 		#ifdef ENABLE_ALARM
