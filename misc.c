@@ -19,6 +19,10 @@
 #include "misc.h"
 #include "settings.h"
 
+#if defined(ENABLE_LCD_INVERT_OPTION)
+bool gSetting_LCD_Inverter = false;
+#endif
+
 const uint8_t     fm_radio_countdown_500ms         =  2000 / 500;  // 2 seconds
 const uint16_t    fm_play_countdown_scan_10ms      =   100 / 10;   // 100ms
 const uint16_t    fm_play_countdown_noscan_10ms    =  1200 / 10;   // 1.2 seconds
