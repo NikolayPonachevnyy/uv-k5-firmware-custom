@@ -353,7 +353,7 @@ const t_sidefunction gSubMenu_SIDEFUNCTIONS[] =
 	{"FM RADIO",		ACTION_OPT_FM},
 #endif
 #ifdef ENABLE_TX1750
-	{"1750HZ",			ACTION_OPT_1750},
+	{"1000HZ",			ACTION_OPT_1750},
 #endif
 	{"LOCK\nKEYPAD",	ACTION_OPT_KEYLOCK},
 	{"SWITCH\nVFO",		ACTION_OPT_A_B},
