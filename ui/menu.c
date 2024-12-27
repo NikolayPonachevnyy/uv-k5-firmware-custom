@@ -36,7 +36,8 @@
 #include "menu.h"
 #include "ui.h"
 
-
+#ifdef ENABLE_VOICE
+{
 const t_menu_item MenuList[] =
 {
 //   text,     voice ID,                               menu ID
@@ -141,6 +142,8 @@ const t_menu_item MenuList[] =
 
 	{"",       VOICE_ID_INVALID,                       0xff               }  // end of list - DO NOT delete or move this this
 };
+}
+#endif
 
 const uint8_t FIRST_HIDDEN_MENU_ITEM = MENU_F_LOCK;
 
