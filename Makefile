@@ -383,7 +383,7 @@ ifeq ($(ENABLE_CUSTOM_MENU_LAYOUT),1)
 endif
 
 LDFLAGS =
-LDFLAGS += -z noexecstack -mcpu=cortex-m0 -nostartfiles -Wl,-T,firmware.ld -Wl,--gc-sections
+LDFLAGS += -z noexecstack -mcpu=cortex-m0 -nostartfiles -Wl,-T,firmware.ld -Wl,--gc-sections, --print-memory-usage
 
 # Use newlib-nano instead of newlib
 LDFLAGS += --specs=nano.specs
